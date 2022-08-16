@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@google-cloud/firestore": "^6.0.0",
+    "@google-cloud/functions-framework": "^3.1.2",
+    "@google-cloud/pubsub": "^3.1.0",
+    "@google-cloud/spanner": "^6.1.3",
+    "@google-cloud/storage": "^6.4.1",
+    "typescript": "^4.7.4",
+    "web3": "^1.7.5"
+  },
+  "scripts": {
+    "start": "functions-framework --target=syncRun"
+  },
+  "type": "module"
+}

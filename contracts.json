@@ -1,0 +1,15 @@
+[
+  {
+    "address": "0xdd1091206EcA48dfc08315242AE4a0b4b0AAA740",
+    "fields": [
+      "exchangeRateStored",
+      "getCash",
+      "totalBorrows",
+      "borrowRatePerBlock",
+      "totalReserves",
+      "totalSupply",
+      "supplyRatePerBlock",
+      "accrualBlockNumber"
+    ]
+  }
+]
