@@ -6,10 +6,13 @@ const PROJECTID = 'molten-infusion-359517';
 const firestore = new Firestore({
   projectId: PROJECTID,
   timestampsInSnapshots: true,
-  keyFilename: process.env.HOME + '/.config/gcloud/application_default_credentials.json'
 });
 
 export const addEntry = async (data) => {
-  const col = firestore.collection('markets/' + data.address + '/data');
-  col.add(data);
+  console.log(data)
+  try {
+    const col = firestore.collection('markets/' + data.address + '/data');
+    col.add(data);
+  }
+  catch (error) { console.log('Firebase Authentication Failed'); }
 }

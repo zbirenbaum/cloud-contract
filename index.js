@@ -35,9 +35,7 @@ export const syncRun = () => {
   });
 }
 
-syncRun();
-
 functions.cloudEvent('syncRun', cloudEvent => {
-  syncRun()
+  syncRun();
 });
 
